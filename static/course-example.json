@@ -1,0 +1,29 @@
+{
+    "name": "Course Example 1",
+    "chapters": {
+        "Chapter 1": {
+            "name": "Chapter 1",
+            "lessons": [
+                "Lesson 1",
+                "Lesson 2"
+            ]
+        },
+        "Chapter 2": {
+            "name": "Chapter 2",
+            "lessons": [
+                "Lesson 1",
+                "Lesson 2",
+                "Lesson 3"
+            ]
+        },
+        "Chapter 3": {
+            "name": "Chapter 3",
+            "lessons": [
+                "Lesson 1",
+                "Lesson 2",
+                "Lesson 3",
+                "Lesson 4"
+            ]
+        }
+    }
+}
