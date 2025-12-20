@@ -12,10 +12,15 @@
     <main>
         <header>
             <div>
-                <input type="file" name="" id="">
-                <button>Load Course</button>
+                <input type="file" name="json-input" id="json-input" accept=".json">
+                <button id="file-load-btn">Load Course</button>
+                <span id="error-msg"></span>
             </div>
         </header>
+        <div id="course">
+            <h2 id="course-title"></h2>
+            <div id="chapter-list"></div>
+        </div>
     </main>
 </body>
 </html>
