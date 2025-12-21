@@ -44,14 +44,15 @@ function loadCourse() {
         let chapterList = document.createElement("ul")
 
         let currentChapter = data["chapters"][`Chapter ${i}`]
-        let lessonsNum = currentChapter["lessons"].length
 
         chapterName.innerHTML = `${currentChapter["name"]}`
 
-        for (let j = 0; j < lessonsNum; j++) {
-            lessonLink = document.createElement("li")
-            lessonLink.innerHTML = currentChapter["lessons"][j]
-            chapterList.appendChild(lessonLink)
+        for (const [key, lesson] of Object.entries(currentChapter["lessons"] || {})) {
+            if (lesson && typeof lesson === "object" && lesson.title) {
+                const lessonLink = document.createElement("li")
+                lessonLink.textContent = lesson.title
+                chapterList.appendChild(lessonLink)
+            }
         }
 
         chapterDiv.appendChild(chapterName)
